@@ -9,7 +9,7 @@ public class InsertDemo {
             Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/bcajava", "root", "");
             Statement st = con.createStatement();
             
-            int result = st.executeUpdate("insert into student values(2,'Shyam','Gaindakot'),(3,'Hari','Pokhara')");
+            int result = st.executeUpdate("insert into student values(14,'Shyam','Gaindakot'),(23,'HariRam','Pokhara')");
             System.out.println(result + " Row is inserted");
             st.close();
             con.close();
